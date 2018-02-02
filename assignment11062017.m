@@ -131,7 +131,7 @@ for m = 1:1:length(EbN0_db)
     end
 end
 
-EbN0_db = linspace(0,10,num);
+EbN0_db = linspace(0,10,100);
 EbN0 = 10.^(EbN0_db/10);
 EsN0 = N_bpsym*EbN0;
 BER_t_bpsk = qfunc(sqrt(2*EbN0)); % rho = -1,BPSK
